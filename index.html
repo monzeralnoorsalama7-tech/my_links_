@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>My Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .card {
+      width: 350px;
+      padding: 30px 20px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(12px);
+      text-align: center;
+      animation: fadeUp 1s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.4);
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .links {
+      margin-top: 25px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .footer {
+      display: block;
+      margin-top: 25px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="/storage/emulated/0/web/person/person/scripts/Picsart_25-06-04_07-54-14-453.jpg" class="avatar">
+
+    <h1>Monzir Salama</h1>
+    <p> mi sitio web personal</p>
+
+    <div class="links">
+      <a id="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a id="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      <a id="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a id="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+
+    <span class="footer">© 2026</span>
+  </div>
+
+  <script>
+    document.getElementById("facebook").href = "https://www.facebook.com/share/16n67RrHt1/";
+    document.getElementById("instagram").href = "https://www.instagram.com/wdaln.oor249?igsh=YzljYTk1ODg3Zg==";
+    document.getElementById("whatsapp").href = "https://wa.me/qr/Y5L7LL5TETX5M1";
+    document.getElementById("tiktok").href = "https://tiktok.com/";
+  </script>
+
+</body>
+</html>
